@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "169062927288",
+    "firebase_url": "https://thingstodo-9cdec.firebaseio.com",
+    "project_id": "thingstodo-9cdec",
+    "storage_bucket": "thingstodo-9cdec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169062927288:android:df30cafd26ca7d53",
+        "android_client_info": {
+          "package_name": "com.example.admin.thingstodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169062927288-n7ll7d843o6t0mjmolpsc3ie866l0lha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.thingstodo",
+            "certificate_hash": "c22772ab9ec7c792a731af6d0f709f555a4a77ec"
+          }
+        },
+        {
+          "client_id": "169062927288-6d64ermki114k4n0mf7sir48biquc9s8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAidhEz8LKjc5Av-gFwVySYgMXlEl1eW98"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169062927288-6d64ermki114k4n0mf7sir48biquc9s8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
