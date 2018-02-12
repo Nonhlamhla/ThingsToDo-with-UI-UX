@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
+    android:id="@+id/activity_sign_up"
     android:background="@android:color/white"
-    tools:context="com.example.admin.thingstodo.SignUp"
+    tools:context="com.example.admin.thingstodo.UserAuth.SignUp"
     >
 
 
@@ -65,18 +66,10 @@
                     android:layout_marginBottom="10dp">
 
 
-                    <!--<ImageButton-->
-                        <!--android:layout_width="40dp"-->
-                        <!--android:layout_height="30dp"-->
-                        <!--app:srcCompat="@drawable/profile"-->
-                        <!--android:background="@android:color/transparent"-->
-                        <!--android:id="@+id/imageButton1"-->
-                        <!--android:layout_marginTop="4dp"/>-->
-
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:id="@+id/editText2"
+                        android:id="@+id/editTextUser"
                         android:textSize="16dp"
                         android:hint="Username"
                         android:textColorHint="#2A363B"
@@ -97,18 +90,10 @@
                     android:layout_marginBottom="10dp">
 
 
-                    <!--<ImageButton-->
-                        <!--android:layout_width="40dp"-->
-                        <!--android:layout_height="30dp"-->
-                        <!--app:srcCompat="@drawable/email"-->
-                        <!--android:background="@android:color/transparent"-->
-                        <!--android:id="@+id/imageButton14"-->
-                        <!--android:layout_marginTop="4dp"/>-->
-
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:id="@+id/editText22"
+                        android:id="@+id/editTextEmail"
                         android:textSize="16dp"
                         android:hint="Email"
                         android:textColorHint="#2A363B"
@@ -127,18 +112,11 @@
                     android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:paddingRight="@dimen/activity_horizontal_margin"  >
 
-                    <!--<ImageButton-->
-                        <!--android:layout_width="40dp"-->
-                        <!--android:layout_height="30dp"-->
-                        <!--app:srcCompat="@drawable/key"-->
-                        <!--android:background="@android:color/transparent"-->
-                        <!--android:id="@+id/imageButton2"-->
-                        <!--android:layout_marginTop="4dp" />-->
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:id="@+id/editText3"
+                        android:id="@+id/editTextPassword"
                         android:hint="Password"
                         android:textSize="16dp"
                         android:textColorHint="#2A363B"
@@ -172,7 +150,7 @@
                     android:text="Forgot password?"
                     android:textColor="@android:color/black"
                     android:textAlignment="textEnd"
-                    android:id="@+id/textView5"
+                    android:id="@+id/tVForgot_pass"
                     android:textColorHint="#2A363B"
                     android:textSize="16dp"  />
 
@@ -185,6 +163,7 @@
                 android:id="@+id/relativeLayout"
                 android:orientation="horizontal"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
                 android:weightSum="2"
                 android:layout_above="@+id/linearLayout4"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -198,7 +177,7 @@
                     android:textAllCaps="false"
                     android:layout_weight="1"
                     android:textColor="@android:color/black"
-                    android:id="@+id/btnLogin0"
+                    android:id="@+id/btnLogin_signup"
                     app:srcCompat="@drawable/oval_button"
                     android:backgroundTint="#EB4A5F"
                     android:background="@drawable/oval_button"
@@ -213,13 +192,28 @@
                     android:textAllCaps="false"
                     android:textColor="@android:color/black"
                     android:layout_margin="8dp"
-                    android:id="@+id/btnSignUp0"
+                    android:id="@+id/btnSignUp_register"
                     android:backgroundTint="#FF847C"
                     android:background="@drawable/oval_button"
                     android:layout_alignParentBottom="true"
                     android:layout_alignStart="@+id/btnLogin" />
 
             </LinearLayout>
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_verify_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:padding="10dp"
+                android:text="Verify Email"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/signup_btn_register" />
 
 
 

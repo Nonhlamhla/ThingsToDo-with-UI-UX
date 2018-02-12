@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.thingstodo.MainAdmin">
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar_Admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="0dp"
+        android:contentInsetLeft="10dp"
+        android:contentInsetRight="10dp"
+        android:contentInsetStart="10dp"
+        android:padding="0dp"
+        app:contentInsetLeft="10dp"
+        app:contentInsetRight="10dp"
+        app:contentInsetStart="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="55dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="16"
+            android:gravity="center">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:padding="14dp"
+                android:rowCount="4"
+                android:useDefaultMargins="true"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="56dp">
+
+
+                <!-- Row 1 -->
+                <!-- Column 1 -->
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--app:cardCornerRadius="12dp"-->
+                <!--app:cardElevation="12dp"-->
+                <!--android:background="@android:color/black">-->
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_rowWeight="1">
+
+
+                    <ImageButton
+                        android:id="@+id/layout_wine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/winery0"
+                        android:scaleType="centerCrop"
+                        android:elevation="12dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_rowWeight="1">
+
+                    <ImageButton
+                        android:id="@+id/layout_music"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/music0"
+                        android:scaleType="centerCrop"
+                        android:elevation="12dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_rowWeight="1">
+
+                    <ImageButton
+                        android:id="@+id/layout_outdoor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/outdoor0"
+                        android:scaleType="centerCrop"
+                        android:elevation="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_rowWeight="1">
+
+                    <ImageButton
+                        android:id="@+id/layout_stage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/arts0"
+                        android:scaleType="centerCrop"
+                        android:elevation="12dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_rowWeight="1">
+
+                    <ImageButton
+                        android:id="@+id/layout_food"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/foodiee0"
+                        android:scaleType="centerCrop"
+                        android:elevation="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_rowWeight="1">
+
+                    <ImageButton
+                        android:id="@+id/layout_indoor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/indoor0"
+                        android:scaleType="centerCrop"
+                        android:elevation="12dp" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_rowWeight="1">
+
+                    <ImageButton
+                        android:id="@+id/layout_fitness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/fitness0"
+                        android:scaleType="centerCrop"
+                        android:elevation="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_rowWeight="1">
+
+                    <ImageButton
+                        android:id="@+id/layout_travel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/holiday0"
+                        android:scaleType="centerCrop"
+                        android:elevation="12dp" />
+
+                </LinearLayout>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

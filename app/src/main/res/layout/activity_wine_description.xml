@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.thingstodo.Wine.WineDescription">
+
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar_WineDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="0dp"
+        android:contentInsetLeft="10dp"
+        android:contentInsetRight="10dp"
+        android:contentInsetStart="10dp"
+        android:padding="0dp"
+        app:contentInsetLeft="10dp"
+        app:contentInsetRight="10dp"
+        app:contentInsetStart="10dp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/toolbar_WineDescription">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:layout_below="@+id/toolbar_WineDescription"
+        android:layout_marginStart="10dp"
+        android:layout_margin="5dp"
+        >
+
+        <ImageButton
+            android:id="@+id/ibImage"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_launcher_background"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            >
+
+            <TextView
+                android:id="@+id/tvArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.01"
+                android:text="JOHANNESBURG"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toEndOf="@+id/tvArea"
+                android:background="@drawable/ic_action_dot"
+                android:id="@+id/imageView3"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/tvEventTitle"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.01"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageView3"
+                android:text=" WINE FOOD CULTURE "
+                android:textColor="@android:color/black"
+                android:layout_marginRight="70dp"
+                android:textSize="16sp"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            >
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="More Detailed Description"
+                android:singleLine="false"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tvDescrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Details"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Date"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_below="@+id/tvDescrip"
+                />
+
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Time"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_below="@+id/tvDescrip"
+                />
+
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Price per ticket"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_below="@+id/tvDescrip"
+                android:layout_marginBottom="10dp"/>
+
+           </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            >
+        <include layout="@layout/activity_maps"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

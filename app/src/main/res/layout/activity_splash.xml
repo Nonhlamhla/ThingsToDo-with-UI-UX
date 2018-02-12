@@ -6,20 +6,28 @@
     android:layout_height="match_parent"
     tools:context="com.example.admin.thingstodo.Splash">
 
+
+
+
     <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/imageView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        app:srcCompat="@drawable/splash" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="221dp"
         android:background="@android:color/transparent"
-        android:text="Start"
-        android:id="@+id/btnStart"/>
+        android:text="Stsrt" />
 
 
 </RelativeLayout>

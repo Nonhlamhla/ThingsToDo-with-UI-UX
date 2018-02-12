@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.thingstodo.BottomNavigation.AddFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="55dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="16"
+        android:gravity="center">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD ITEMS ACTIVITY"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"/>
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

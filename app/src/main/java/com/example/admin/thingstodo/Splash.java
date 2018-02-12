@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.admin.thingstodo.UserAuth.ForgotPassword;
+import com.example.admin.thingstodo.UserAuth.LogIn;
+
 public class Splash extends AppCompatActivity {
 
     Button btnStart;
@@ -16,14 +19,14 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        btnStart = findViewById(R.id.btnStart);
+       btnStart = findViewById(R.id.btnStart);
 
 
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getApplicationContext(), Login.class);
+                Intent intent = new Intent(getApplicationContext(), LogIn.class);
                 startActivity(intent);
             }
         });

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="com.example.admin.thingstodo.UserAuth.Profile">
+
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar_Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="0dp"
+        android:contentInsetLeft="10dp"
+        android:contentInsetRight="10dp"
+        android:contentInsetStart="10dp"
+        android:padding="0dp"
+        app:contentInsetLeft="10dp"
+        app:contentInsetRight="10dp"
+        app:contentInsetStart="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/imageButton"
+            android:src="@drawable/music0"
+            android:background="@color/colorPrimary"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="31dp"
+            android:layout_marginTop="158dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            android:id="@+id/floatingActionButton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButton"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="36dp"
+            android:text=" Username"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/tvUsername" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvUsername"
+            android:layout_alignTop="@+id/floatingActionButton"
+            android:text=" Email"
+            android:textColor="@color/colorAccent"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/floatingActionButton"
+            android:text="We ask everyone for a few details before taking our deals or  adding places of ThingsToDo. So hurry up and get it over and done with."
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/textView" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"
+            android:foregroundGravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

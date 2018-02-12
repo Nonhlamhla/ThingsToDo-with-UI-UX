@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    tools:context="com.example.admin.thingstodo.BottomNavigation.LandingBottomNav"
+    >
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/container"-->
+        <!--android:layout_below="@+id/toolbar_Navigation"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:ignore="NotSibling"></RelativeLayout>-->
+
+
+    <RelativeLayout
+        android:id="@+id/th"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+
+            android:layout_alignParentTop="true"
+            android:id="@+id/toolbar_Navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_margin="0dp"
+            android:contentInsetLeft="10dp"
+            android:contentInsetRight="10dp"
+            android:contentInsetStart="10dp"
+            android:padding="0dp"
+            app:contentInsetLeft="10dp"
+            app:contentInsetRight="10dp"
+            app:contentInsetStart="10dp">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/Profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/profile_icon_"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>
