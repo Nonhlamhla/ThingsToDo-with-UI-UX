@@ -1,6 +1,7 @@
 package com.example.admin.thingstodo.Music;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.admin.thingstodo.Classes.CatalogClass;
 import com.example.admin.thingstodo.R;
+import com.example.admin.thingstodo.Wine.WineDescription;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +61,19 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MyViewHolder
         Glide.with(context)
                 .load(catalogClass.getImageurl())
                 .into(holder.ibImage);
+
+        holder.ibImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CatalogClass c = catalogClass;
+                Intent intent = new Intent(context,WineDescription
+                        .class);
+                intent.putExtra("select", c);
+                context.startActivity(intent);
+
+
+            }
+        });
 
     }
 

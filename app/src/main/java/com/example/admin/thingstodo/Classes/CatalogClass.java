@@ -16,33 +16,15 @@ public class CatalogClass implements Serializable {
     String discount;
     String imageurl;
     String imageurl2;
-
-    public String getImageurl2() {
-        return imageurl2;
-    }
-
-    public void setImageurl2(String imageurl2) {
-        this.imageurl2 = imageurl2;
-    }
-
-    public String getImageurl3() {
-        return imageurl3;
-    }
-
-    public void setImageurl3(String imageurl3) {
-        this.imageurl3 = imageurl3;
-    }
-
     String imageurl3;
     String location;
-
     String time;
     String fulldesscription;
     String cellno;
 
 
-
-
+    public CatalogClass() {
+    }
 
     public CatalogClass(String id, String s) {
 
@@ -167,6 +149,23 @@ public class CatalogClass implements Serializable {
     }
 
     String enquiries;
+
+
+    public String getImageurl2() {
+        return imageurl2;
+    }
+
+    public void setImageurl2(String imageurl2) {
+        this.imageurl2 = imageurl2;
+    }
+
+    public String getImageurl3() {
+        return imageurl3;
+    }
+
+    public void setImageurl3(String imageurl3) {
+        this.imageurl3 = imageurl3;
+    }
 
 }
 

@@ -56,7 +56,7 @@ public class HomeFragment extends Fragment {
         layout_wine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), WineAdmin.class);
+                Intent intent = new Intent(getActivity(), WineActivity.class);
                 startActivity(intent);
             }
         });
@@ -64,7 +64,7 @@ public class HomeFragment extends Fragment {
         layout_music.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), MusicAdmin.class);
+                Intent intent = new Intent(getActivity(), MusicActivity.class);
                 startActivity(intent);
             }
         });

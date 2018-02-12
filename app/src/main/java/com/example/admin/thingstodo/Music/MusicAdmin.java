@@ -170,7 +170,7 @@ public class MusicAdmin extends AppCompatActivity {
 //                    mDialog.dismiss();
 //                    Toast.makeText(getApplicationContext(), "Done Uploading ...", Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(getApplicationContext(), WineActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), MusicActivity.class);
                     startActivity(intent);
 
                 }

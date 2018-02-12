@@ -13,11 +13,15 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.DecodeFormat;
+import com.bumptech.glide.load.resource.bitmap.StreamBitmapDecoder;
 import com.example.admin.thingstodo.Classes.CatalogClass;
 import com.example.admin.thingstodo.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 /**
  * MAIN ADAPTER
@@ -58,10 +62,15 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.MyViewHo
         holder.tvPrice.setText(catalogClass.getPrice());
         holder.tvDiscount.setText(catalogClass.getDiscount());
 
-
+        int radius = 30; // corner radius, higher value = more rounded
+        int margin = 10;
         Glide.with(context)
                 .load(catalogClass.getImageurl())
+                .bitmapTransform(new RoundedCornersTransformation(context, radius, margin))
+                .placeholder(android.R.drawable.ic_menu_revert)
                 .into(holder.ibImage);
+
+
 
 
         holder.ibImage.setOnClickListener(new View.OnClickListener() {

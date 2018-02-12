@@ -52,8 +52,11 @@ android {
         implementation 'com.google.firebase:firebase-messaging:11.0.4'
         implementation 'com.google.firebase:firebase-core:11.0.4'
         implementation 'de.hdodenhof:circleimageview:2.1.0'
+        implementation 'jp.wasabeef:glide-transformations:2.0.2' // If you want to use the GPU Filters
+        implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
         implementation 'com.makeramen:roundedimageview:2.3.0' // Rectangle ImageView
         implementation 'com.github.bumptech.glide:glide:3.7.0' // Glide Image Downloader
+        implementation 'com.squareup.picasso:picasso:2.5.2'
         testImplementation 'junit:junit:4.12'
         androidTestImplementation 'com.android.support.test:runner:1.0.1'
         androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'

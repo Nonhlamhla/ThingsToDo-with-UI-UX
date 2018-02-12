@@ -45,7 +45,7 @@ public class MusicActivity extends AppCompatActivity implements SearchView.OnQue
         /**
          * MUSIC LISTVIEW
          */
-        databaseMusic = FirebaseDatabase.getInstance().getReference("ThingToDo/Music");
+        databaseMusic = FirebaseDatabase.getInstance().getReference("ThingToDo/Music/details");
 
         databaseMusic.addValueEventListener(new ValueEventListener() {
             @Override
