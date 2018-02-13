@@ -45,7 +45,7 @@ public class WineActivity extends AppCompatActivity implements SearchView.OnQuer
         /**
          * WINE LISTVIEW
          */
-        databaseWine = FirebaseDatabase.getInstance().getReference("ThingToDo/WineTastings");
+        databaseWine = FirebaseDatabase.getInstance().getReference("ThingToDo/WineTastings/details");
         lvWine = findViewById(R.id.lvWine);
 
         catalogListWine = new ArrayList<>();

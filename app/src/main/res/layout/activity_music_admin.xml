@@ -7,180 +7,294 @@
     tools:context="com.example.admin.thingstodo.Music.MusicAdmin">
 
 
-
-    <ImageButton
-        android:id="@+id/Image"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:scaleType="centerCrop"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_launcher_background"
-        android:background="@android:color/transparent"/>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left">
-
-        <EditText
-            android:id="@+id/edDate"
-            android:layout_width="55dp"
-            android:layout_height="60dp"
-            android:background="@drawable/rectangle_edge"
-            android:hint="Thurs
-01
- Feb"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/black"/>
-
-    </RelativeLayout>
-
-
-    <!--<RelativeLayout-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_marginRight="5dp"-->
-    <!--android:layout_marginTop="1dp"-->
-    <!--android:layout_gravity="right"-->
-    <!--android:layout_weight="2">-->
-
-    <!--<ImageButton-->
-    <!--android:id="@+id/ibSave"-->
-    <!--android:layout_width="50dp"-->
-    <!--android:layout_height="50dp"-->
-    <!--android:src="@drawable/ic_action_save"-->
-    <!--android:background="@android:color/transparent"/>-->
-
-    <!--</RelativeLayout>-->
-
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="2">
-
-        <EditText
-            android:id="@+id/edArea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/edDescription"
-            android:hint="JOHANNESBURG"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            android:textColorHint="@color/colorPrimaryDark" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_above="@+id/edDescription"
-            android:layout_marginBottom="14dp"
-            android:layout_toEndOf="@+id/edArea"
-            android:background="@drawable/ic_action_dot" />
-
-        <EditText
-            android:id="@+id/edEventTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageView3"
-            android:hint=" WINE FOOD CULTURE"
-            android:textColor="@android:color/black"
-            android:textAllCaps="true"/>
+        android:scrollbars="vertical">
 
 
-        <EditText
-            android:id="@+id/edDescription"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/edArea"
-            android:hint=" Wine tasting, paring wine with different cheeses "
-            android:textColor="@android:color/black"
-            android:textStyle="bold"
-            android:maxLines="1"
-            android:maxLength="50"/>
-
-        <ImageView
-            android:id="@+id/ibRating"
-            android:layout_width="26dp"
-            android:layout_height="27dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/imageView4"
-            android:layout_marginStart="16dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ic_action_star" />
-
-        <TextView
-            android:id="@+id/tvRating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/ibRating"
-            android:layout_marginStart="11dp"
-            android:layout_toEndOf="@+id/ibRating"
-            android:fontFamily="monospace"
-            android:text="00"
-            android:textColor="@android:color/black" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="26dp"
-            android:layout_height="27dp"
-            android:layout_alignBottom="@+id/edPrice"
-            android:layout_toStartOf="@+id/edPrice"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ic_action_price" />
-
-        <EditText
-            android:id="@+id/edPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/edDescription"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="14dp"
-            android:fontFamily="monospace"
-            android:hint="R150.00 pp"
-            android:textColor="@android:color/black" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="26dp"
-            android:layout_height="27dp"
-            android:layout_alignBottom="@+id/edDiscount"
-            android:layout_toStartOf="@+id/edDiscount"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ic_action_discount" />
+            android:layout_height="match_parent">
 
 
-        <EditText
-            android:id="@+id/edDiscount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/edPrice"
-            android:layout_alignBottom="@+id/edPrice"
-            android:layout_alignParentEnd="true"
-            android:fontFamily="monospace"
-            android:hint="80% off"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/black" />
-
-        <Button
-            android:id="@+id/btn_Add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="75dp"
-            android:layout_toEndOf="@+id/edArea"
-            android:text="ok"
-            android:background="@color/colorPrimaryDark"/>
-
-    </RelativeLayout>
+            <ImageButton
+                android:id="@+id/Image"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_launcher_background"
+                android:background="@android:color/transparent"/>
 
 
+            <ImageButton
+                android:id="@+id/Image0"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_launcher_background"
+                android:background="@android:color/transparent"/>
+
+
+
+            <ImageButton
+                android:id="@+id/Image1 "
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_launcher_background"
+                android:background="@android:color/transparent"/>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <EditText
+                    android:id="@+id/edDate"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/rectangle_edge"
+                    android:hint="Thurs
+01
+ Feb"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"/>
+
+            </RelativeLayout>
+
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_weight="2">-->
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/ibSave"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:src="@drawable/ic_action_save"-->
+            <!--android:background="@android:color/transparent"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/edArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/edDescription"
+                    android:hint="JOHANNESBURG"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_above="@+id/edDescription"
+                    android:layout_marginBottom="14dp"
+                    android:layout_toEndOf="@+id/edArea"
+                    android:background="@drawable/ic_action_dot" />
+
+                <EditText
+                    android:id="@+id/edEventTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:hint=" WINE FOOD CULTURE"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"/>
+
+
+                <EditText
+                    android:id="@+id/edDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/edArea"
+                    android:hint=" Wine tasting, paring wine with different cheeses "
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:maxLength="50"/>
+
+                <ImageView
+                    android:id="@+id/ibRating"
+                    android:layout_width="26dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imageView4"
+                    android:layout_marginStart="16dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_action_star" />
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ibRating"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/ibRating"
+                    android:fontFamily="monospace"
+                    android:text="00"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="26dp"
+                    android:layout_height="27dp"
+                    android:layout_alignBottom="@+id/edPrice"
+                    android:layout_toStartOf="@+id/edPrice"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_action_price" />
+
+                <EditText
+                    android:id="@+id/edPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edDescription"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="monospace"
+                    android:hint="R150.00 pp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="26dp"
+                    android:layout_height="27dp"
+                    android:layout_alignBottom="@+id/edDiscount"
+                    android:layout_toStartOf="@+id/edDiscount"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_action_discount" />
+
+
+                <EditText
+                    android:id="@+id/edDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/edPrice"
+                    android:layout_alignBottom="@+id/edPrice"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="monospace"
+                    android:hint="80% off"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black" />
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginStart="8dp"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tvDescrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Event Details"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/edTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Time"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/tvDescrip"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/tvFullDes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" full description of event PARAGRAPH"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/tvDescrip"
+                        android:layout_marginBottom="10dp"/>
+
+                    <EditText
+                        android:id="@+id/edCell_No"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Cellphone Number"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/edEnquiries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:hint=" Enquiry Email"/>
+
+
+                    <EditText
+                        android:id="@+id/edLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:hint=" Location" />
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:text="ok"
+                android:background="@color/colorPrimaryDark"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

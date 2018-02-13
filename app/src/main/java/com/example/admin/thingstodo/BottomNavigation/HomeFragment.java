@@ -64,7 +64,7 @@ public class HomeFragment extends Fragment {
         layout_music.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), MusicActivity.class);
+                Intent intent = new Intent(getActivity(), MusicAdmin.class);
                 startActivity(intent);
             }
         });
