@@ -21,6 +21,7 @@ public class CatalogClass implements Serializable {
     String time;
     String fulldesscription;
     String cellno;
+    String searchLocation;
 
 
     public CatalogClass() {
@@ -32,7 +33,7 @@ public class CatalogClass implements Serializable {
 
 
     public CatalogClass(String id, String date, String eventTitle, String description, String price,
-                        String discount, String imageurl,String imageurl2, String imageurl3,  String location, String time,String fulldesscription, String cellno,  String enquiries ) {
+                        String discount, String imageurl,String imageurl2, String imageurl3,  String location, String time,String fulldesscription, String cellno,  String enquiries, String searchLocation ) {
 
         this.id = id;
         this.date = date;
@@ -49,6 +50,7 @@ public class CatalogClass implements Serializable {
         this.fulldesscription = fulldesscription;
         this.cellno = cellno;
         this.enquiries = enquiries;
+        this.searchLocation = searchLocation;
 
     }
 
@@ -166,6 +168,15 @@ public class CatalogClass implements Serializable {
     public void setImageurl3(String imageurl3) {
         this.imageurl3 = imageurl3;
     }
+
+    public String getSearchLocation() {
+        return searchLocation;
+    }
+
+    public void setSearchLocation(String searchLocation) {
+        this.searchLocation = searchLocation;
+    }
+
 
 }
 

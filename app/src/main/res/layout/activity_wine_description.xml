@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.admin.thingstodo.Wine.WineDescription">
+    tools:context="com.example.admin.thingstodo.Wine.WineDescription"
+    android:scaleType="fitStart">
 
 
     <android.support.v7.widget.Toolbar
@@ -47,6 +48,13 @@
         android:layout_margin="15dp"
         >
 
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/view_pager"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_centerHorizontal="true"></android.support.v4.view.ViewPager>-->
+
         <ImageButton
             android:id="@+id/imageView"
             android:layout_width="match_parent"
@@ -56,6 +64,11 @@
             android:background="@android:color/transparent"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"  />
+
+
+
+
+
 
     </LinearLayout>
 
@@ -77,7 +90,8 @@
                 android:text="JOHANNESBURG"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold"/>
 
 
         </LinearLayout>
@@ -119,13 +133,13 @@
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                />
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:id="@+id/tvDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=" Date"
+                android:text="Date"
                 android:textColor="@android:color/black"
                 android:textSize="14sp"
                 android:layout_below="@+id/tvDescrip"
@@ -136,22 +150,57 @@
                 android:id="@+id/tvTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=" Time"
+                android:text="Time"
                 android:textColor="@android:color/black"
                 android:textSize="14sp"
                 android:layout_below="@+id/tvDescrip"
                 />
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tvTime"
+    android:layout_marginBottom="5dp">
 
-            <TextView
-                android:id="@+id/tvPrice"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=" Price per ticket"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:layout_below="@+id/tvDescrip"
-                android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="000.00"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tvPrice"
+        android:text=" pp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/dis_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvPrice"
+        android:text="Discount"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+
 
            </LinearLayout>
 
@@ -165,6 +214,8 @@
             android:layout_marginBottom="10dp"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin">
+
+
         <include layout="@layout/activity_maps"/>
 
         </LinearLayout>
@@ -178,29 +229,29 @@
 
             <ImageButton
                 android:id="@+id/ibCall"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:background="@drawable/circle_background_buttons"
                 android:src="@drawable/ic_phone_in_talk_black_24dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="10dp"
                 />
 
 
             <ImageButton
                 android:id="@+id/ibEmail"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:background="@drawable/circle_background_buttons"
                 android:src="@drawable/ic_email_black_24dp"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="10dp" />
 
             <ImageButton
                 android:id="@+id/ibShare"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:background="@drawable/circle_background_buttons"
                 android:src="@drawable/ic_share_black_24dp"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="10dp"/>
 
         </LinearLayout>
 
@@ -216,30 +267,30 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="0dp"
-                android:padding="5dp"
+                android:padding="1dp"
                 android:text="Call"
+                android:layout_marginRight="15dp"
                 android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/right_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
+                android:padding="1dp"
                 android:layout_toRightOf="@+id/tvCall1"
-                android:gravity="right"
                 android:text="Enquiry"
+                android:layout_marginRight="10dp"
                 android:textColor="@android:color/black"/>
 
             <TextView
                 android:id="@+id/share"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_toRightOf="@+id/right_text"
-                android:gravity="right"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/right_text"
+                android:padding="1dp"
                 android:text="Share"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/tvCall"
@@ -260,109 +311,116 @@
 
         </RelativeLayout>
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
 
 
+    <TextView
+        android:id="@+id/tickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tickets"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
 
-       <!--<RelativeLayout-->
-           <!--android:layout_width="match_parent"-->
-           <!--android:layout_height="wrap_content"-->
-           <!--android:layout_marginTop="2dp"-->
-           <!--android:layout_marginBottom="10dp">-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tickets"
+        android:text="Number of tickets"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:id="@+id/textView2" />
 
-           <!--<RelativeLayout-->
-               <!--android:layout_width="45dp"-->
-               <!--android:layout_height="wrap_content"-->
-               <!--android:layout_alignParentStart="true"-->
-               <!--android:layout_alignParentTop="true"-->
-               <!--android:layout_marginStart="225dp"-->
-               <!--android:id="@+id/relativeLayout2">-->
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/ibMinus"
+        android:layout_toEndOf="@+id/ibMinus"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:id="@+id/tvNumber" />
 
-           <!--</RelativeLayout>-->
-
-
-           <!--<RelativeLayout-->
-               <!--android:layout_width="50dp"-->
-               <!--android:layout_height="wrap_content"-->
-               <!--android:layout_alignParentTop="true"-->
-               <!--android:layout_toEndOf="@+id/relativeLayout2"-->
-               <!--android:id="@+id/relativeLayout3">-->
-
-           <!--</RelativeLayout>-->
-
-           <!--<RelativeLayout-->
-               <!--android:layout_width="50dp"-->
-               <!--android:layout_height="wrap_content"-->
-               <!--android:layout_alignParentTop="true"-->
-               <!--android:layout_marginStart="15dp"-->
-               <!--android:layout_toEndOf="@+id/relativeLayout3"-->
-               <!--android:id="@+id/relativeLayout4">-->
-
-           <!--</RelativeLayout>-->
-
-           <!--<TextView-->
-               <!--android:id="@+id/textView2"-->
-               <!--android:layout_width="wrap_content"-->
-               <!--android:layout_height="wrap_content"-->
-               <!--android:layout_alignStart="@+id/relativeLayout2"-->
-               <!--android:layout_below="@+id/relativeLayout2"-->
-               <!--android:layout_weight="1"-->
-               <!--android:text="Call"-->
-               <!--android:textColor="@android:color/black" />-->
-
-           <!--<TextView-->
-               <!--android:id="@+id/textView3"-->
-               <!--android:layout_width="wrap_content"-->
-               <!--android:layout_height="wrap_content"-->
-               <!--android:layout_alignParentTop="true"-->
-               <!--android:layout_centerHorizontal="true"-->
-               <!--android:text="Enquiry"-->
-               <!--android:textColor="@android:color/black" />-->
-
-           <!--<TextView-->
-               <!--android:id="@+id/textView4"-->
-               <!--android:layout_width="wrap_content"-->
-               <!--android:layout_height="wrap_content"-->
-               <!--android:layout_alignStart="@+id/relativeLayout4"-->
-               <!--android:layout_below="@+id/relativeLayout4"-->
-               <!--android:text="Share"-->
-               <!--android:textColor="@android:color/black" />-->
-
-       <!--</RelativeLayout>-->
+    <ImageButton
+        android:id="@+id/ibMinus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp"
+        android:onClick="decrement"
+        android:background="@drawable/circle_background_buttons"
+        android:src="@drawable/ic_remove_black_24dp" />
 
 
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="center"-->
-            <!--android:layout_marginTop="5dp"-->
-            <!--android:layout_marginBottom="10dp"-->
-            <!--android:orientation="horizontal">-->
+    <ImageButton
+        android:id="@+id/ibAdd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/tvNumber"
+        android:layout_toEndOf="@+id/tvNumber"
+        android:background="@drawable/circle_background_buttons"
+        android:src="@drawable/ic_add_black_24dp"
+        android:onClick="increment"/>
 
-            <!--<TextView-->
-                <!--android:id="@+id/textView2"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="Call"-->
-                <!--android:textColor="@android:color/black" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/textView3"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:text="Enquiry"-->
-                <!--android:textColor="@android:color/black" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/textView4"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="Share"-->
-                <!--android:textColor="@android:color/black" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvNumber"
+        android:layout_marginTop="5dp"
+        android:text="Total Amount: "
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:id="@+id/textView4" />
 
 
-        <!--</LinearLayout>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:text="R"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="000.00"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 
+</RelativeLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvAmount"
+            android:layout_marginTop="14dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_payment_black_24dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="end"
+            app:backgroundTint="@color/colorPrimaryDark"/>
 
 
     </LinearLayout>

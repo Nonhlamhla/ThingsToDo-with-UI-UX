@@ -23,8 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="55dp">
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="51dp">
 
 
         <LinearLayout
@@ -47,7 +47,7 @@
                 android:layout_rowWeight="2"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="56dp">
+                tools:layout_editor_absoluteY="6dp">
 
 
                 <!-- Row 1 -->

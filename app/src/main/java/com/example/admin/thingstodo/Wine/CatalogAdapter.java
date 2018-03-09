@@ -95,11 +95,12 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.MyViewHo
         return (null != catalogList ? catalogList.size() : 0);
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView tvDate, tvArea, tvEventTitle, tvDescription, tvRating, tvPrice, tvDiscount;
         ImageButton ibImage, ibSave;
         Button btn_Add;
+        ImageButton image_View;
 
 
         public MyViewHolder(View itemView) {
@@ -114,6 +115,7 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.MyViewHo
             btn_Add = itemView.findViewById(R.id.btn_Add);
             ibImage = itemView.findViewById(R.id.ibImage);
             ibSave = itemView.findViewById(R.id.ibSave);
+            image_View = itemView.findViewById(R.id.image_View);
 
 
             /**
