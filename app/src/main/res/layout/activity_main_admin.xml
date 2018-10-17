@@ -263,7 +263,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_gravity="center_horizontal"
                         android:background="@android:color/transparent"
-                        android:src="@drawable/holiday0"
+                        android:src="@drawable/winery0"
                         android:scaleType="centerCrop"
                         android:elevation="12dp" />
 
